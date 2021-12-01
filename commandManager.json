@@ -1,0 +1,11 @@
+{
+  "member": {
+    "eightball": true,
+    "button": true,
+    "defer": true,
+    "menu": true,
+    "options": true,
+    "edit": true
+  },
+  "admin": { "init": true, "create-intro": true }
+}
