@@ -8,7 +8,7 @@
     "eslint": "eslint",
     "prettier": "prettier",
     "prepare": "husky install",
-    "lint": "eslint --fix && pretty-quick --staged"
+    "lint": "eslint -- ./** --fix && pretty-quick --staged"
   },
   "author": "",
   "license": "ISC",
