@@ -6,8 +6,7 @@
   "scripts": {
     "start": "node deploy-commands && nodemon bot.js nodemon --ignore servers/*.json",
     "eslint": "eslint",
-    "prettier": "prettier",
-    "test": "echo \"Error: no test specified\""
+    "prettier": "prettier"
   },
   "author": "",
   "license": "ISC",
