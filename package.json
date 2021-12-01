@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node deploy-commands && nodemon bot.js nodemon --ignore servers/*.json",
     "eslint": "eslint",
-    "prettier": "prettier"
+    "prettier": "prettier",
+    "prepare": "husky install",
+    "lint": "eslint --fix && pretty-quick --staged"
   },
   "author": "",
   "license": "ISC",
@@ -23,7 +25,9 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-unicorn": "^39.0.0",
+    "husky": "^7.0.4",
     "nodemon": "^2.0.15",
-    "prettier": "^2.5.0"
+    "prettier": "^2.5.0",
+    "pretty-quick": "^3.1.2"
   }
 }
