@@ -9,7 +9,7 @@ module.exports = {
     .setDescription("Shakes the 8ball").setDefaultPermission(false),
 
   async execute(interaction) {
-    await interaction.reply(shake8Ball());
+              await interaction.reply(shake8Ball());
   },
 };
  
