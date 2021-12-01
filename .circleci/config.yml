@@ -6,6 +6,8 @@ version: 2.1
 jobs:
   # Below is the definition of your job to build and test your app, you can rename and customize it as you want.
   test:   
+    docker:
+      - image: cimg/node:16.10
     steps:
       # Checkout the code as the first step.
       - checkout
