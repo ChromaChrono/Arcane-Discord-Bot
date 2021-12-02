@@ -5,10 +5,10 @@
   "main": "bot.js",
   "scripts": {
     "start": "node deploy-commands && nodemon bot.js nodemon --ignore servers/*.json",
-    "eslint": "eslint",
+    "eslint": "eslint --fix",
     "prettier": "prettier",
     "prepare": "husky install",
-    "lint": "eslint -- ./** --fix && pretty-quick --staged"
+    "lint": "npm run eslint **/*.js && pretty-quick --staged"
   },
   "author": "",
   "license": "ISC",
@@ -23,6 +23,7 @@
     "eslint": "^8.3.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-unicorn": "^39.0.0",
     "husky": "^7.0.4",

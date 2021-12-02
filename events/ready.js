@@ -1,7 +1,7 @@
-const initGuild = require("./../settings/index");
+const initGuild = require('../settings/index');
 
 module.exports = {
-  name: "ready",
+  name: 'ready',
   once: true,
   execute(client) {
     initGuild(client);

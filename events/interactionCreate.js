@@ -1,13 +1,13 @@
-const catchAsync = require("../utils/catchAsync");
+const catchAsync = require('../utils/catchAsync');
 
 module.exports = {
-  name: "interactionCreate",
+  name: 'interactionCreate',
   async execute(interaction) {
     if (interaction.isButton()) return;
 
-    const client = interaction.client;
+    const { client } = interaction;
     console.log(
-      `${interaction.user.tag} in #${interaction.channel.name} triggered an interaction.`
+      `${interaction.user.tag} in #${interaction.channel.name} triggered an interaction.`,
     );
 
     const command = client.commandsMisc.get(interaction.commandName);

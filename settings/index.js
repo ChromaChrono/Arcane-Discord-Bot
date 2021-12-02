@@ -1,5 +1,5 @@
-const setPerms = require("./setPerms");
+const setPerms = require('./setPerms');
 
-module.exports = async (client) => {
+module.exports = async client => {
   setPerms(client);
 };

@@ -1,20 +1,20 @@
-const { SlashCommandBuilder } = require("@discordjs/builders");
-const wait = require("util").promisify(setTimeout);
+const { SlashCommandBuilder } = require('@discordjs/builders');
+const wait = require('util').promisify(setTimeout);
 
 module.exports = {
   data: new SlashCommandBuilder()
-    .setName("edit")
-    .setDescription("Edits the first message!")
+    .setName('edit')
+    .setDescription('Edits the first message!')
     .setDefaultPermission(false),
   async execute(interaction) {
-    await interaction.reply("");
+    await interaction.reply('');
     await wait(100);
-    await interaction.editReply("Death will");
+    await interaction.editReply('Death will');
     await wait(100);
-    await interaction.editReply("Death will come");
+    await interaction.editReply('Death will come');
     await wait(100);
-    await interaction.editReply("Death will come soon");
+    await interaction.editReply('Death will come soon');
     await wait(100);
-    await interaction.editReply("Death will come soon . . .");
+    await interaction.editReply('Death will come soon . . .');
   },
 };

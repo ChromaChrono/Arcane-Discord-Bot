@@ -1,11 +1,10 @@
 {
   "extends": [
-    "eslint:recommended",
-    "airbnb-base",
     "plugin:prettier/recommended",
-    "prettier"
+    "prettier",
+    "plugin:node/recommended"
   ],
-  "plugins": ["prettier", "unicorn"],
+  "plugins": ["prettier", "node"],
   "env": {
     "node": true,
     "es6": true
@@ -13,7 +12,5 @@
   "parserOptions": {
     "ecmaVersion": 2021
   },
-  "rules": {
-    "unicorn/prevent-abbreviations": "off"
-  }
+  "rules": {}
 }
