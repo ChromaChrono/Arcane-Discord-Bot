@@ -5,7 +5,8 @@
     "defer": true,
     "menu": true,
     "options": true,
-    "edit": true
+    "edit": true,
+    "play": true
   },
   "admin": { "init": true, "create-intro": true }
 }

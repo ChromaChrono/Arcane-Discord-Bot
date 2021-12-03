@@ -7,7 +7,7 @@ module.exports = {
     .setDescription('Edits the first message!')
     .setDefaultPermission(false),
   async execute(interaction) {
-    await interaction.reply('');
+    await interaction.reply('Death');
     await wait(100);
     await interaction.editReply('Death will');
     await wait(100);
