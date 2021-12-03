@@ -69,6 +69,5 @@ console.log(commands.length);
   } catch (error) {
     console.error(error);
   }
-  process.exit();
 })();
 client.login(token);
