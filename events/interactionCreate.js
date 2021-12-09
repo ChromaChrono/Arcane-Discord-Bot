@@ -14,6 +14,6 @@ module.exports = {
 
     if (!command) return;
 
-    catchAsync(command.execute, interaction);
+    await catchAsync(command.execute, interaction);
   },
 };
