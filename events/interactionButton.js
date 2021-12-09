@@ -1,19 +1,26 @@
 const catchAsync = require('../utils/catchAsync');
+const giveMemberStatus = require('../serverCommands/giveMemberStatus');
+const kickMember = require('../serverCommands/kickMember');
 
 module.exports = {
   name: 'interactionCreate',
   async execute(interaction) {
     if (!interaction.isButton()) return;
 
+    const commands = {
+      joinServer: giveMemberStatus,
+      leaveServer: kickMember,
+    };
+
     const { client } = interaction;
     console.log(
       `${interaction.user.tag} in #${interaction.channel.name} clicked a button.`,
     );
 
-    const command = client.commandsButton.get(interaction.commandName);
+    const action = commands[interaction.customId];
 
-    if (!command) return;
+    if (!action) return;
 
-    catchAsync(command.execute, interaction);
+    catchAsync(action, interaction);
   },
 };

@@ -5,7 +5,9 @@ const setupEvents = require('./setting-up/loadEvents');
 const setupCommands = require('./setting-up/loadCommands');
 const setPerms = require('./setting-up/setPerms');
 
-const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
+const client = new Client({
+  intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_VOICE_STATES],
+});
 
 const token = process.env.BOT_TOKEN;
 

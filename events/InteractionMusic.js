@@ -1,5 +1,7 @@
 const catchAsync = require('../utils/catchAsync');
 
+// ...
+
 module.exports = {
   name: 'interactionCreate',
   async execute(interaction) {

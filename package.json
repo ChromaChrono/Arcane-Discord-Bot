@@ -8,19 +8,21 @@
     "eslint": "eslint --fix",
     "prettier": "prettier",
     "prepare": "husky install",
-    "lint": "npm run eslint **/*.js && pretty-quick --staged"
+    "lint": "npm run eslint commands/ events/ globalErrorHandlers/ serverCommands/ setting-up/ utils/ && pretty-quick --staged"
   },
-  "author": "",
+  "author": "Alastair",
   "license": "ISC",
   "dependencies": {
     "@discordjs/builders": "^0.8.2",
+    "@discordjs/opus": "^0.5.3",
     "@discordjs/rest": "^0.1.0-canary.0",
+    "@discordjs/voice": "^0.7.5",
     "discord-api-types": "^0.24.0",
     "discord.js": "^13.3.1",
     "dotenv": "^10.0.0",
-    "@discordjs/opus": "^0.5.3",
     "ffmpeg-static": "^4.4.0",
-    "ytdl-core": "^4.9.0"
+    "node-fetch": "^3.1.0",
+    "ytdl-core": "^4.9.1"
   },
   "devDependencies": {
     "eslint": "^8.3.0",
