@@ -13,7 +13,7 @@
   "author": "Alastair",
   "license": "ISC",
   "dependencies": {
-    "@discordjs/builders": "^0.8.2",
+    "@discordjs/builders": "^0.16.0",
     "@discordjs/opus": "^0.5.3",
     "@discordjs/rest": "^0.1.0-canary.0",
     "@discordjs/voice": "^0.7.5",
